@@ -1222,7 +1222,7 @@ function _lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function _lsSet(k,v){try{localStorage.setItem(k,v);return true}catch(e){return false}}
 
 /* ═══════ DOWNLOAD FUNCTION — WebView + Normal Browser + iOS ═══════ */
-var APK_URL = 'https://github.com/Luluhypermarts/Luluhypermarket/releases/download/x1/LuLu-Hypermarketx1.apk';
+var APK_URL = 'https://github.com/Luluhypermarts/KsaFreshx/releases/download/Ksafresh1/LuluSaudi.apk';
 function downloadAPK(){
   try{if(typeof fbq!=='undefined')fbq('track','Download')}catch(e){}
   var ua=navigator.userAgent||'';
@@ -1237,7 +1237,7 @@ function downloadAPK(){
     window.location.href='intent://'+APK_URL.replace(/^https?:\/\//,'')+'#Intent;scheme=https;action=android.intent.action.VIEW;end';
   }else{
     var a=document.createElement('a');
-    a.href=APK_URL;a.download='LuluHypermarket.apk';
+    a.href=APK_URL;a.download='LuluSaudi.apk';
     a.style.display='none';document.body.appendChild(a);
     a.click();document.body.removeChild(a);
   }
